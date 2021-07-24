@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  height: auto;
+  max-width: 210px;
+  margin: 10px 0 0 45px;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  margin: 30px 0 0 45px;
+}
+img {
+  margin: 40px 0 0 40px; /* top  right  bottom  left */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 920px;
+  margin: 0px auto;
+}
+
+.box {
+  height: 450px;
+  width: 305px;
+  transform: translateY(50%);
+}
+
+.orange {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px 0 0 5px;
+  /*top left / top right / bottom right / bottom left*/
+}
+
+.blue {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.darkblue {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 5px 5px 0;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  width: 125px;
+  height: 40px;
+  margin: 90px 0 0 45px;
+}
+
+/*I dont really know how to make button text transparent */
+.but-one {
+  color: hsl(31, 77%, 52%);
+}
+.but-two {
+  color: hsl(184, 100%, 22%);
+}
+.but-three {
+  color: hsl(179, 100%, 13%);
+}
+
+/*THINGS I KNOW I MISSED
+- Button interactiveness
+- Card layout when smaller (Its close but not perfect)
+
+This is the first of these challenges ive done without any
+help so any feedback that would be nice
+*/
