@@ -76,6 +76,7 @@ button {
   color: hsl(0, 0%, 95%);
   background-color: hsl(31, 77%, 52%);
   cursor: pointer;
+  border: solid 1px hsl(0, 0%, 100%);
 }
 
 .but-two {
@@ -86,6 +87,7 @@ button {
   color: hsl(0, 0%, 95%);
   background-color: hsl(184, 100%, 22%);
   cursor: pointer;
+  border: solid 1px hsl(0, 0%, 100%);
 }
 
 .but-three {
@@ -96,12 +98,5 @@ button {
   color: hsl(0, 0%, 95%);
   background-color: hsl(179, 100%, 13%);
   cursor: pointer;
+  border: solid 1px hsl(0, 0%, 100%);
 }
-
-/*
-THINGS I KNOW I MISSED
-- Card layout when smaller (Its close but not perfect)
-
-This is the first of these challenges ive done without any
-help so any feedback that would be nice
-*/
