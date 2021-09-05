@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
 
+:root {
+  --Bright-Orange: hsl(31, 77%, 52%);
+  --Dark-Cyan: hsl(184, 100%, 22%);
+  --Very-Dark-Cyan: hsl(179, 100%, 13%);
+  --Transparent-White: hsla(0, 0%, 100%, 0.75);
+  --Very-Light-Gray: hsl(0, 0%, 95%);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,12 +16,12 @@
 }
 
 body {
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--Very-Light-Gray);
   font-size: 15px;
 }
 
 p {
-  color: hsla(0, 0%, 100%, 0.75);
+  color: var(--Transparent-White);
   font-family: "Lexend Deca", sans-serif;
   height: auto;
   max-width: 210px;
@@ -21,7 +29,7 @@ p {
 }
 
 h1 {
-  color: hsl(0, 0%, 95%);
+  color: var(--Very-Light-Gray);
   font-family: "Big Shoulders Display", cursive;
   margin: 30px 0 0 45px;
 }
@@ -44,24 +52,24 @@ img {
 }
 
 .orange {
-  background-color: hsl(31, 77%, 52%);
+  background-color: var(--Bright-Orange);
   border-radius: 5px 0 0 5px;
   /*top left / top right / bottom right / bottom left*/
 }
 
 .blue {
-  background-color: hsl(184, 100%, 22%);
+  background-color: var(--Dark-Cyan);
 }
 
 .darkblue {
-  background-color: hsl(179, 100%, 13%);
+  background-color: var(--Very-Dark-Cyan);
   border-radius: 0 5px 5px 0;
 }
 
 /*BUTTON SECTION*/
 button {
-  background-color: hsl(0, 0%, 95%);
-  border: hsl(0, 0%, 95%);
+  background-color: var(--Very-Light-Gray);
+  border: var(--Very-Light-Gray);
   border-radius: 20px;
   width: 125px;
   height: 40px;
@@ -69,34 +77,34 @@ button {
 }
 
 .but-one {
-  color: hsl(31, 77%, 52%);
+  color: var(--Bright-Orange);
 }
 
 .but-one:hover {
-  color: hsl(0, 0%, 95%);
-  background-color: hsl(31, 77%, 52%);
+  color: var(--Very-Light-Gray);
+  background-color: var(--Bright-Orange);
   cursor: pointer;
   border: solid 1px hsl(0, 0%, 100%);
 }
 
 .but-two {
-  color: hsl(184, 100%, 22%);
+  color: var(--Dark-Cyan);
 }
 
 .but-two:hover {
   color: hsl(0, 0%, 95%);
-  background-color: hsl(184, 100%, 22%);
+  background-color: var(--Dark-Cyan);
   cursor: pointer;
   border: solid 1px hsl(0, 0%, 100%);
 }
 
 .but-three {
-  color: hsl(179, 100%, 13%);
+  color: var(--Very-Dark-Cyan);
 }
 
 .but-three:hover {
   color: hsl(0, 0%, 95%);
-  background-color: hsl(179, 100%, 13%);
+  background-color: var(--Very-Dark-Cyan);
   cursor: pointer;
   border: solid 1px hsl(0, 0%, 100%);
 }
