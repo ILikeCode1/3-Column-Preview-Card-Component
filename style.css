@@ -2,11 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
 
 :root {
-  --Bright-Orange: hsl(31, 77%, 52%);
-  --Dark-Cyan: hsl(184, 100%, 22%);
-  --Very-Dark-Cyan: hsl(179, 100%, 13%);
-  --Transparent-White: hsla(0, 0%, 100%, 0.75);
-  --Very-Light-Gray: hsl(0, 0%, 95%);
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --veryLightGray: hsl(0, 0%, 95%);
+   /*Button*/
+  --butBor: solid 1px hsl(0, 0%, 100%);
 }
 
 * {
@@ -15,13 +17,17 @@
   margin: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background-color: var(--Very-Light-Gray);
-  font-size: 15px;
+  background-color: var(--veryLightGray);
+  font-size: 1.5rem;
 }
 
 p {
-  color: var(--Transparent-White);
+  color: var(--transparentWhite);
   font-family: "Lexend Deca", sans-serif;
   height: auto;
   max-width: 210px;
@@ -29,7 +35,7 @@ p {
 }
 
 h1 {
-  color: var(--Very-Light-Gray);
+  color: var(--veryLightGray);
   font-family: "Big Shoulders Display", cursive;
   margin: 30px 0 0 45px;
 }
@@ -52,24 +58,24 @@ img {
 }
 
 .orange {
-  background-color: var(--Bright-Orange);
+  background-color: var(--brightOrange);
   border-radius: 5px 0 0 5px;
   /*top left / top right / bottom right / bottom left*/
 }
 
 .blue {
-  background-color: var(--Dark-Cyan);
+ background-color: var(--darkCyan);
 }
 
 .darkblue {
-  background-color: var(--Very-Dark-Cyan);
+  background-color: var(--veryDarkCyan);
   border-radius: 0 5px 5px 0;
 }
 
 /*BUTTON SECTION*/
 button {
-  background-color: var(--Very-Light-Gray);
-  border: var(--Very-Light-Gray);
+  background-color: var(--veryLightGray);
+  border: var(--veryLightGray);
   border-radius: 20px;
   width: 125px;
   height: 40px;
@@ -77,34 +83,34 @@ button {
 }
 
 .but-one {
-  color: var(--Bright-Orange);
+  color: var(--brightOrange);
 }
 
 .but-one:hover {
-  color: var(--Very-Light-Gray);
-  background-color: var(--Bright-Orange);
+  color: var(--veryLightGray);
+  background-color: var(--brightOrange);
   cursor: pointer;
-  border: solid 1px hsl(0, 0%, 100%);
+  border: var(--butBor);
 }
 
 .but-two {
-  color: var(--Dark-Cyan);
+  color: var(--darkCyan);
 }
 
 .but-two:hover {
   color: hsl(0, 0%, 95%);
-  background-color: var(--Dark-Cyan);
+  background-color: var(--darkCyan);
   cursor: pointer;
-  border: solid 1px hsl(0, 0%, 100%);
+  border: var(--butBor);
 }
 
 .but-three {
-  color: var(--Very-Dark-Cyan);
+  color: var(--veryDarkCyan);
 }
 
 .but-three:hover {
   color: hsl(0, 0%, 95%);
-  background-color: var(--Very-Dark-Cyan);
+  background-color: var(--veryDarkCyan);
   cursor: pointer;
-  border: solid 1px hsl(0, 0%, 100%);
+  border: var(--butBor);
 }
