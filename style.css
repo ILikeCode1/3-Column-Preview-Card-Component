@@ -2,13 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
 
 :root {
+  /* Colors */
   --brightOrange: hsl(31, 77%, 52%);
   --darkCyan: hsl(184, 100%, 22%);
   --veryDarkCyan: hsl(179, 100%, 13%);
   --transparentWhite: hsla(0, 0%, 100%, 0.75);
   --veryLightGray: hsl(0, 0%, 95%);
-   /*Button*/
-  --butBor: solid 1px hsl(0, 0%, 100%);
+
+  /*Button*/
+  --buttonSty: solid 1px hsl(0, 0%, 100%);
 }
 
 * {
@@ -24,6 +26,14 @@ html {
 body {
   background-color: var(--veryLightGray);
   font-size: 1.5rem;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 p {
@@ -46,15 +56,14 @@ img {
 /*BOX SECTION*/
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  flex-wrap: wrap;
-  max-width: 920px;
 }
 
 .box {
   height: 450px;
   width: 305px;
-  transform: translateY(50%);
 }
 
 .orange {
@@ -64,7 +73,7 @@ img {
 }
 
 .blue {
- background-color: var(--darkCyan);
+  background-color: var(--darkCyan);
 }
 
 .darkblue {
@@ -90,7 +99,7 @@ button {
   color: var(--veryLightGray);
   background-color: var(--brightOrange);
   cursor: pointer;
-  border: var(--butBor);
+  border: var(--buttonSty);
 }
 
 .but-two {
@@ -98,10 +107,10 @@ button {
 }
 
 .but-two:hover {
-  color: hsl(0, 0%, 95%);
+  color: var(--veryLightGray);
   background-color: var(--darkCyan);
   cursor: pointer;
-  border: var(--butBor);
+  border: var(--buttonSty);
 }
 
 .but-three {
@@ -109,8 +118,8 @@ button {
 }
 
 .but-three:hover {
-  color: hsl(0, 0%, 95%);
+  color: var(--veryLightGray);
   background-color: var(--veryDarkCyan);
   cursor: pointer;
-  border: var(--butBor);
+  border: var(--buttonSty);
 }
