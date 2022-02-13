@@ -131,3 +131,48 @@ a {
   border: var(--buttonSty);
   cursor: pointer;
 }
+
+@media screen and (max-width: 1050px) {
+  main {
+    height: auto;
+  }
+
+  h1 {
+    padding: 2rem 0 0 4rem;
+  }
+
+  p {
+    max-width: 270px;
+    padding: 2rem 0 3rem 4rem;
+  }
+
+  img {
+    padding: 3rem 0 0 4rem;
+  }
+
+  /*BOX SECTION*/
+
+  .box {
+    height: 37.5rem;
+    width: 30rem;
+  }
+
+  .orange {
+    border-radius: 7px 7px 0 0;
+  }
+
+  .darkblue {
+    border-radius: 0 0 7px 7px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+/*BUTTON SECTION*/
+
+  .button {
+    margin-left: 4rem;
+    padding: 1rem 2.2rem;
+  }
+}
