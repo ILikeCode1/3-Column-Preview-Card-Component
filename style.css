@@ -29,28 +29,30 @@ body {
 }
 
 main {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
-}
-
-p {
-  color: var(--transparentWhite);
-  font-family: "Lexend Deca", sans-serif;
-  height: auto;
-  max-width: 210px;
-  margin: 10px 0 0 45px;
+  height: 100vh;
 }
 
 h1 {
   color: var(--veryLightGray);
   font-family: "Big Shoulders Display", cursive;
-  margin: 30px 0 0 45px;
+  font-size: 3.2rem;
+  padding: 30px 0 0 45px;
 }
+
+p {
+  color: var(--transparentWhite);
+  font-family: "Lexend Deca", sans-serif;
+  max-width: 255px;
+  padding: 20px 0 0 45px;
+  line-height: 25px;
+}
+
 img {
-  margin: 40px 0 0 40px; /* top  right  bottom  left */
+  padding: 40px 0 0 40px; /* top  right  bottom  left */
 }
 
 /*BOX SECTION*/
@@ -68,7 +70,7 @@ img {
 
 .orange {
   background-color: var(--brightOrange);
-  border-radius: 5px 0 0 5px;
+  border-radius: 10px 0 0 10px;
   /*top left / top right / bottom right / bottom left*/
 }
 
@@ -78,7 +80,7 @@ img {
 
 .darkblue {
   background-color: var(--veryDarkCyan);
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 10px 10px 0;
 }
 
 /*BUTTON SECTION*/
@@ -88,7 +90,7 @@ button {
   border-radius: 20px;
   width: 125px;
   height: 40px;
-  margin: 90px 0 0 45px;
+  margin: 50px 0 0 45px;
 }
 
 .but-one {
@@ -98,8 +100,8 @@ button {
 .but-one:hover {
   color: var(--veryLightGray);
   background-color: var(--brightOrange);
-  cursor: pointer;
   border: var(--buttonSty);
+  cursor: pointer;
 }
 
 .but-two {
@@ -109,8 +111,8 @@ button {
 .but-two:hover {
   color: var(--veryLightGray);
   background-color: var(--darkCyan);
-  cursor: pointer;
   border: var(--buttonSty);
+  cursor: pointer;
 }
 
 .but-three {
@@ -120,6 +122,6 @@ button {
 .but-three:hover {
   color: var(--veryLightGray);
   background-color: var(--veryDarkCyan);
-  cursor: pointer;
   border: var(--buttonSty);
+  cursor: pointer;
 }
